@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocationSwitcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPe-m6-Ios">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTm-1l-Hur">
+                                <rect key="frame" x="358" y="525" width="232" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvF-o1-it3">
+                                        <rect key="frame" x="8" y="8" width="216" height="59"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Update Map"/>
+                                        <connections>
+                                            <action selector="didTapOnUpdateMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPE-yv-4fI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VvF-o1-it3" firstAttribute="top" secondItem="sTm-1l-Hur" secondAttribute="top" constant="8" id="d3p-0u-ZEw"/>
+                                    <constraint firstAttribute="width" constant="232" id="fEh-WN-Sf5"/>
+                                    <constraint firstAttribute="height" constant="75" id="kLW-Mp-hbh"/>
+                                    <constraint firstAttribute="bottom" secondItem="VvF-o1-it3" secondAttribute="bottom" constant="8" id="tOV-Ax-nlq"/>
+                                    <constraint firstAttribute="trailing" secondItem="VvF-o1-it3" secondAttribute="trailing" constant="8" id="wtu-jP-vE3"/>
+                                    <constraint firstItem="VvF-o1-it3" firstAttribute="leading" secondItem="sTm-1l-Hur" secondAttribute="leading" constant="8" id="x5m-jC-KK9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DVC installed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPb-0c-kRK" userLabel="DVC installed">
+                                <rect key="frame" x="20" y="0.0" width="117.5" height="24"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aPe-m6-Ios" secondAttribute="bottom" id="4f2-HE-IOL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sTm-1l-Hur" secondAttribute="trailing" constant="10" id="AH6-Qz-OmI"/>
+                            <constraint firstItem="aPe-m6-Ios" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nfj-av-nnG"/>
+                            <constraint firstItem="cPb-0c-kRK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qkr-sW-1Ab"/>
+                            <constraint firstItem="sTm-1l-Hur" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XWC-ek-a7a"/>
+                            <constraint firstItem="cPb-0c-kRK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YqE-gj-15Q"/>
+                            <constraint firstItem="aPe-m6-Ios" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pPy-xc-77c"/>
+                            <constraint firstItem="aPe-m6-Ios" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xB9-Ec-rkX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="installedAppsLabel" destination="cPb-0c-kRK" id="5zb-bk-fEV"/>
+                        <outlet property="mapView" destination="aPe-m6-Ios" id="clX-Ev-ls8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
