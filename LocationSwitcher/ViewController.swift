@@ -41,9 +41,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
     """
     DoveConviene installed: \(UIApplication.shared.canOpenURL(URL(string: "dvc://")!))
     CardPlus installed: \(UIApplication.shared.canOpenURL(URL(string: "cardplusapp://")!))
-    PromoQui installed: \(UIApplication.shared.canOpenURL(URL(string: "promoquiapp://")!))
-    VolantinoFacile installed: \(UIApplication.shared.canOpenURL(URL(string: "vfapp://")!))
-    Tiendeo installed: \(UIApplication.shared.canOpenURL(URL(string: "tiendeo://")!))
+    PromoQui installed: \(UIApplication.shared.canOpenURL(URL(string: "pq://")!))
+    VolantinoFacile installed: \(UIApplication.shared.canOpenURL(URL(string: "vf://")!))
+    Tiendeo installed: \(UIApplication.shared.canOpenURL(URL(string: "ti://")!))
     """
     }
 

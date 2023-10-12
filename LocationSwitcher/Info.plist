@@ -22,9 +22,9 @@
 	<array>
 		<string>dvc</string>
 		<string>cardplusapp</string>
-		<string>promoquiapp</string>
-		<string>vfapp</string>
-		<string>tiendeo</string>
+		<string>pq</string>
+		<string>vf</string>
+		<string>ti</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
