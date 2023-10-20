@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC5716F92AE2B44E0095ABD8 /* GPX */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GPX; path = LocationSwitcher/GPX; sourceTree = "<group>"; };
 		FCACD4E42AA8AAC4007101C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FCC75ED527CFBFDE0009D04D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		FCECFAFE28F824D800FBFC91 /* GPX */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GPX; path = "../shopfully-engage-sdk-ios/Example/ShopFullyEngageSDK_Example_Swift/GPX"; sourceTree = "<group>"; };
 		FCF2A793256FF72A0074A744 /* LocationSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF2A796256FF72A0074A744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF2A79A256FF72A0074A744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				FCACD4E42AA8AAC4007101C4 /* README.md */,
-				FCECFAFE28F824D800FBFC91 /* GPX */,
+				FC5716F92AE2B44E0095ABD8 /* GPX */,
 				FCF2A795256FF72A0074A744 /* LocationSwitcher */,
 				FCF2A794256FF72A0074A744 /* Products */,
 				FCF2A7BD256FF8E90074A744 /* Frameworks */,
